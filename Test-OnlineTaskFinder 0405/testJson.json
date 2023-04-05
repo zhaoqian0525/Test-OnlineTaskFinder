@@ -1,0 +1,29 @@
+{
+  "drink": {
+    "name": "drink",
+    "edge": [
+      ["touch_cup","move_cup"],["touch_pourer","move_pourer"],["move_cup","pour"],["move_pourer","pour"],["pour","drink"],["drink","clean_cup"]
+    ]
+  },
+
+  "eat_snack": {
+    "name": "eat_snack",
+    "edge": [
+      ["touch_snack","move_snack"],["move_snack","eat"],["eat","move_snack_to_bin"],["eat","move_snack_back"]
+    ]
+  },
+
+  "having_dinner": {
+    "name": "having_dinner",
+    "edge": [
+      ["touch_can","move_can"],["touch_dish","move_dish"],["move_can","put_food_in_dish"],["move_dish","put_food_in_dish"],["touch_utensil","move_utensil"],["put_food_in_dish","move_to_table"],["move_to_table","eat"],["move_utensil","eat"],["eat","clean_dish"]
+    ]
+  },
+
+  "eat_fruit": {
+    "name": "eat_fruit",
+    "edge": [
+      ["touch_fruit","move_fruit"],["move_fruit","wash_fruit"],["move_fruit","peel_fruit"],["move_fruit","cut_fruit"],["wash_fruit","eat"],["peel_fruit","eat"],["cut_fruit","eat"]
+    ]
+  }
+}
